@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/logo-clg-xs.png" type="image/x-icon" />
+    <title>Scholar Notebook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header id="masthead">
+      <div>
+        <a href="/index.html"
+          ><img
+            id="logo-notebook"
+            src="/images/scholar-notebook.png"
+            alt="scholar notebook logo"
+        /></a>
+      </div>
+      <div class="account">
+        <a href="https://learnto.codelikeagirl.com/dashboard" target="_blank">
+          <img
+            id="thumbnail-account"
+            src="/images/thumbnail-account.svg"
+            alt=""
+          />
+        </a>
+        <h5>Dana</h5>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main-header">
+        <div class="main-header-padding">
+          <div class="main-header-label">
+            <h1>Got Questions?</h1>
+            <h2>Get in Touch!</h2>
+          </div>
+        </div>
+      </div>
+
+      <section class="main-container">
+        <div class="wrapper">
+          <form method="POST">
+            <div class="field">
+              <label for="full-name"> What is your name? </label>
+              <input
+                type="text"
+                id="full-name"
+                name="name"
+                placeholder="First & Last*"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="email"> What is your email? </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email*"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label>Which course are you currently studying?</label>
+              <div class="field preselect-field">
+                <input
+                  type="radio"
+                  name="course"
+                  id="foundations"
+                  value="foundations"
+                />
+                <label for="foundations">Foundations of Web Dev</label>
+              </div>
+              <div class="field preselect-field">
+                <input
+                  type="radio"
+                  name="course"
+                  id="javascript"
+                  value="javascript"
+                />
+                <label for="javascript">Navigating Javascript</label>
+              </div>
+              <div class="field preselect-field">
+                <input type="radio" name="course" id="react" value="react" />
+                <label for="react">Building Web Apps With React.js</label>
+              </div>
+              <div class="field preselect-field">
+                <input type="radio" name="course" id="node" value="node" />
+                <label for="node">Node.js</label>
+              </div>
+              <div class="field preselect-field">
+                <input type="radio" name="course" id="python" value="python" />
+                <label for="python">Python Primer</label>
+              </div>
+              <div class="field preselect-field">
+                <input
+                  type="radio"
+                  name="course"
+                  id="c-sharp"
+                  value="c-sharp"
+                />
+                <label for="c-sharp">Programming With C#</label>
+              </div>
+            </div>
+
+            <div class="field dropdown-field">
+              <label for="lesson">
+                Is your question specific to a particular lesson?
+              </label>
+              <select id="lesson" name="choice">
+                <option value=""></option>
+                <option value="none">No, not applicable</option>
+                <option value="lesson01">Yes, Lesson 1</option>
+                <option value="lesson02">Yes, Lesson 2</option>
+                <option value="lesson03">Yes, Lesson 3</option>
+                <option value="lesson04">Yes, Lesson 4</option>
+                <option value="lesson05">Yes, Lesson 5</option>
+                <option value="lesson06">Yes, Lesson 6</option>
+                <option value="lesson07">Yes, Lesson 7</option>
+                <option value="lesson08">Yes, Lesson 8</option>
+                <option value="lesson09">Yes, Lesson 9</option>
+                <option value="lesson10">Yes, Lesson 10</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="your-questions"> What's on your mind? </label>
+              <textarea id="your-questions">
+I have a question about... 
+              </textarea>
+            </div>
+
+            <div class="field">
+              <label for="url"
+                >Optional: provide the URL for your GitHub repo.</label
+              >
+              <input
+                type="url"
+                name="url"
+                id="url"
+                placeholder="https://example.com"
+                pattern="https://.*"
+                size="30"
+                required
+              />
+            </div>
+
+            <div class="field preselect-field">
+              <input
+                type="checkbox"
+                name="emergency"
+                id="emergency"
+                class="largerCheckbox"
+                value="emergency"
+              />
+              <label id="emergency"
+                >This is a "break glass in case of emergency" situation!</label
+              >
+            </div>
+
+            <div class="result"></div>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-clg | container-fluid">
+        <div>
+          <a href="https://learnto.codelikeagirl.com/" target="_blank">
+            <img
+              id="logo-code-like-a-girl"
+              src="/images/logo-code-like-a-girl.png"
+              alt="Code Like a Girl logo"
+            />
+          </a>
+        </div>
+        <div class="container-contact-clg">
+          <nav class="row">
+            <a href="https://twitter.com/codelikeagirlau" target="_blank">
+              <img src="/images/logo-twitter-clg.png" alt="twitter icon" />
+            </a>
+            <a href="https://www.facebook.com/codelikeagirlau" target="_blank">
+              <img src="/images/logo-facebook-clg.png" alt="facebook icon" />
+            </a>
+            <a
+              href="https://www.instagram.com/codelikeagirlau/"
+              target="_blank"
+            >
+              <img src="/images/logo-instagram-clg.png" alt="instagram icon" />
+            </a>
+            <a
+              href="https://au.linkedin.com/company/code-like-a-girl"
+              target="_blank"
+            >
+              <img src="/images/logo-linkedin-clg.png" alt="linkedin icon" />
+            </a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-cta">
+        <nav>
+          <ul role="list">
+            <li>
+              <a
+                href="https://learnto.codelikeagirl.com/terms-and-conditions/"
+                target="_blank"
+                >Terms & Conditions</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://learnto.codelikeagirl.com/privacy-policy/"
+                target="_blank"
+                >Privacy</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      const selectElement = document.querySelector("#emergency");
+
+      selectElement.addEventListener("change", (event) => {
+        const result = document.querySelector(".result");
+        result.textContent = `Don't panic! Help is on the way!`;
+      });
+    </script>
+  </body>
+</html>

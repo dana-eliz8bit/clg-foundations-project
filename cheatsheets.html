@@ -1,0 +1,2653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/logo-clg-xs.png" type="image/x-icon" />
+    <title>Scholar Notebook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header id="masthead-notebook">
+      <div>
+        <a href="/index.html"
+          ><img
+            id="logo-notebook"
+            src="/images/scholar-notebook.png"
+            alt="scholar notebook logo"
+        /></a>
+      </div>
+      <div class="account">
+        <a href="https://learnto.codelikeagirl.com/dashboard" target="_blank">
+          <img
+            id="thumbnail-account"
+            src="/images/thumbnail-account.svg"
+            alt=""
+          />
+        </a>
+        <h5>Dana</h5>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container-cheatsheets">
+        <div class="index-href" id="01"></div>
+        <section class="cheatsheets">
+          <h3>01</h3>
+          <h4>Introduction</h4>
+          <p>
+            <mark>Hypertext Markup Language</mark> (HTML) and
+            <mark>Cascading Style Sheets</mark> (CSS) can be paired together to
+            create a web design.
+          </p>
+          <p>
+            HTML controls the structure, content, words and CSS controls the
+            colours, styles, and sizes.
+          </p>
+          <article>
+            <h5>HTML</h5>
+            <p>HTML documents are composed of <mark>HTML elements</mark>.</p>
+
+            <p>
+              All HTML pages start with a <mark>doctype declaration</mark> that
+              tells the browser which version of HTML is being used. The latest
+              version is HTML5.
+            </p>
+
+            <code>&lt;!DOCTYPE html&gt;</code>
+
+            <p>
+              After the doctype declaration, HTML pages then have an
+              <mark>html element</mark>.
+            </p>
+
+            <code>&lt;html&gt;&lt;/html&gt;</code>
+
+            <p>
+              Inside the html element is a <mark>head element</mark> containing
+              page info followed by a <mark>body element</mark> containing page
+              content.
+            </p>
+
+            <code>&lt;head&gt;&lt;/head&gt;</code>
+
+            <br /><code>&lt;body&gt;&lt;/body&gt;</code>
+
+            <p>
+              Most HTML elements have opening and closing <mark>tags</mark>.
+            </p>
+
+            <code
+              >&lt;p&gt;An example of opening and closing tags&lt;/p&gt;</code
+            >
+
+            <p>
+              HTML elements can have <mark>attributes</mark> that add more
+              information.
+            </p>
+
+            <code>&lt;a href="www.example.com"&gt; Example &lt;/a&gt;</code>
+
+            <p>Some HTML elements do not use a closing tag.</p>
+
+            <code>&lt;img src="example.png"&gt;</code>
+          </article>
+          <article>
+            <h5>CSS</h5>
+            <p>
+              CSS uses <mark>rules</mark> to control the presentation of HTML
+              elements. CSS rules have a
+              <mark>selector, properties and values</mark>.
+            </p>
+
+            <code
+              >p { <br />&nbsp;color:pink; <br />&nbsp;font-size:14px;
+              <br />}</code
+            >
+
+            <p>
+              A selector is used to select which elements a rule applies to. In
+              the above example, p will apply this rule to HTML &lt;p&gt;
+              elements.
+            </p>
+
+            <p>
+              The selector is followed by <mark>curly braces</mark> which define
+              where the details of the rule begin and end.
+            </p>
+
+            <p>
+              A property defines which aspect of an element is being controlled.
+              In the above example, color will control the &lt;p&gt; element
+              text colour and font size.
+            </p>
+
+            <p>
+              A value defines the value that a particular property will take. In
+              the above example, text colour will be pink and font size will be
+              14 pixels.
+            </p>
+
+            <p>
+              CSS can be added to a webpage using
+              <mark>inline styles, internal css, or external stylesheets</mark>.
+            </p>
+
+            <p>
+              Inline styles add the <mark>style attribute</mark> to HTML
+              elements.
+            </p>
+
+            <code>&lt;p style="color:pink"&gt;Example&lt;/p&gt;</code>
+
+            <p>
+              Internal CSS puts CSS rules inside a
+              <mark>&lt;style&gt; element</mark> placed in the head section of a
+              webpage.
+            </p>
+
+            <code>
+              &lt;head&gt;
+              <br />&nbsp;&lt;style&gt; <br />&nbsp;&nbsp;p {
+              <br />&nbsp;&nbsp;&nbsp;color:pink <br />&nbsp;&nbsp;}
+              <br />&nbsp;&lt;/style&gt; <br />&lt;/head&gt;
+            </code>
+
+            <p>
+              External stylesheets use a link element in the head section that
+              links to an external <mark>.css file</mark> containing CSS rules.
+            </p>
+
+            <p>
+              *Important* <br />Using external stylesheets is the recommended
+              way to add styles to a webpage.
+            </p>
+            <code
+              >&lt;head&gt; <br />&nbsp;&lt;link rel="stylesheet"
+              type="text/css" href="main.css"&gt; <br />&lt;/head&gt;</code
+            >
+          </article>
+        </section>
+
+        <div class="index-href" id="02"></div>
+        <section class="cheatsheets">
+          <h3>02</h3>
+          <h4>Links, Colours & Fonts</h4>
+          <article>
+            <h5>Links</h5>
+            <p>
+              Links are created using the <mark>anchor tag</mark> and the
+              <mark>href attribute</mark> (Hypertext Reference) defines a link's
+              destination.
+            </p>
+
+            <code
+              >&lt;a href="www.example.com"&gt;Example Website&lt;/a&gt;</code
+            >
+
+            <p>
+              The href can specify a <mark>relative path</mark> for local
+              content, an <mark>absolute path</mark> to a different webpage, or
+              an element on the same page.
+            </p>
+
+            <code
+              >&lt;a href="/about.html"&gt;Example Relative Path&lt;/a&gt</code
+            >
+
+            <p>
+              <code
+                >&lt;a href="www.example.com"&gt;Example Absolute
+                Path&lt;/a&gt;</code
+              >
+            </p>
+
+            <p>
+              <code
+                >&lt;a href="#Section_lower_down"&gt;Example Jump to Section
+                2&lt;/a&gt</code
+              >
+              <br />Next section:&nbsp;<code
+                >&lt;h2 id="#Section_lower_down"&gt;Section 2&lt;/a&gt</code
+              >
+            </p>
+
+            <p>Links can also lead to email addresses and phone numbers.</p>
+
+            <p>
+              Anchor tags can have <mark>target</mark> and
+              <mark>title</mark> attributes.
+            </p>
+
+            <p>
+              The target attribute tells the browser where to open the link and
+              the title attribute displays a <mark>tooltip</mark> when the user
+              hovers over a link.
+            </p>
+
+            <code
+              >&lt;a href="/monstera deliciosa.jpg" target="_self" title="Photo
+              of a monstera deliciosa"&gt;Houseplant&lt;/a&gt;</code
+            >
+
+            <p>
+              Links can be in different states depending on user interaction:
+            </p>
+            <ul>
+              <li>unvisited</li>
+              <li>visited</li>
+              <li>hover</li>
+              <li>active</li>
+            </ul>
+          </article>
+          <article>
+            <h5>Colours</h5>
+            <p>
+              The <mark>RGB colour model</mark> is used to display colours on
+              screens using red, green and blue light.
+            </p>
+
+            <p>Colours can be referred to using:</p>
+            <ul>
+              <li>colour names</li>
+              <li>RGB values</li>
+              <li>hex codes</li>
+              <li>HSL values</li>
+            </ul>
+
+            <p>
+              All browsers recognise 16 basic <mark>colour names</mark> while
+              modern browsers recognise an extended list of 100+ color names.
+            </p>
+
+            <p>
+              <mark>RGB values</mark> specify the red, green, and blue component
+              of a colour with a number from 0-255.
+            </p>
+
+            <code>rgb(238,88,159)</code>
+
+            <p>
+              <mark>Hex codes</mark> use pairs of hexadecimal symbols to specify
+              the red, green, and blue components with values from 00-FF.
+            </p>
+
+            <code>#ee589f</code>
+
+            <p>
+              Using an <mark>alpha value</mark> to update a colour's
+              transparency will change the hex code format from #RRGGBB to
+              #RRGGBBAA (where alpha is A).
+            </p>
+
+            <code>#ee589f80</code>
+
+            <p>
+              <mark>HSL values</mark> specify the hue (0-360&deg;), %
+              saturation, and % lightness of a colour.
+            </p>
+
+            <code>hsl(332,82%,64%)</code>
+          </article>
+          <article>
+            <h5>Styling Text</h5>
+            <p>
+              Some of the main CSS properties that control font formatting and
+              styling are:
+            </p>
+            <ul>
+              <li>color</li>
+              <li>font-weight, font-style, text-decoration</li>
+              <li>font-family</li>
+              <li>font-size</li>
+            </ul>
+
+            <p>The <mark>color</mark> property controls text colour.</p>
+
+            <p>For basic text formatting, we use:</p>
+            <ul>
+              <li><code>font-weight: bold</code></li>
+              <li><code>font-style: italic</code></li>
+              <li><code>text-decoration: underline</code></li>
+            </ul>
+
+            <p>
+              The <mark>font-family</mark> property can specify a generic family
+              like <mark>serif, sans-serif, or monospace</mark>, or a specific
+              font.
+            </p>
+
+            <p>
+              A <mark>font stack</mark> lists multiple fonts one after the other
+              to ensure fonts load as desired.
+            </p>
+
+            <p>
+              The <mark>font-size</mark> property can use
+              <mark>absolute</mark> units (px, pt, xx-small through xx-large) or
+              <mark>relative</mark> units (em, %, smaller, larger).
+            </p>
+
+            <p>
+              Absolute units remain consistent while relative units set the font
+              size in relation to the parent element.
+            </p>
+          </article>
+        </section>
+
+        <div class="index-href" id="03"></div>
+        <section class="cheatsheets">
+          <h3>03</h3>
+          <h4>Lists, Tables & Images</h4>
+          <article>
+            <h5>Lists</h5>
+            <p>Lists contain groups of related data.</p>
+
+            <p>
+              <mark>Ordered lists</mark> are created using
+              <code>&lt;ol&gt;&lt;/ol&gt;</code> tags.
+            </p>
+
+            <p>
+              <mark>Unordered lists</mark> are created using
+              <code>&lt;ul&gt;&lt;/ul&gt;</code> tags.
+            </p>
+
+            <p>
+              No matter the list type, each list item is enclosed in
+              <code>&lt;li&gt;&lt;/li&gt;</code> tags.
+            </p>
+
+            <p>
+              The CSS rule <mark>list-style-type</mark> controls the bullet or
+              number style used by a list.
+            </p>
+
+            <p>
+              For unordered lists, list-style-types include
+              <mark>disc, circle, and square</mark>.
+            </p>
+
+            <p>
+              For ordered lists, list-style-types include
+              <mark
+                >decimal, lower-latin, upper-latin, lower-roman, and
+                upper-roman</mark
+              >.
+            </p>
+          </article>
+          <article>
+            <h5>Tables</h5>
+            <p>
+              HTML tables are created using the
+              <code>&lt;table&gt;</code> opening and closing tags.
+            </p>
+
+            <p>
+              For each row in the table, add a pair of
+              <mark>table row</mark> tags, <code>&lt;tr&gt;&lt;/tr&gt;</code>.
+            </p>
+
+            <p>
+              Use the <mark>table cell data</mark> tags
+              <code>&lt;td&gt;&lt;/td&gt;</code> to add cells to each row.
+            </p>
+
+            <p>
+              For header cells, use <mark>table cell header</mark> tags
+              <code>&lt;th&gt;&lt;/th&gt;</code> which most browser styles
+              default to bold.
+            </p>
+
+            <p>
+              Table rows can be grouped together into
+              <mark>header, body, and footer</mark> sections.
+            </p>
+
+            <p>
+              To do this, nest the rows in <code>&lt;thead&gt;</code>,
+              <code>&lt;tbody&gt;</code>, and <code>&lt;tfoot&gt;</code> opening
+              and closing tags.
+            </p>
+          </article>
+          <article>
+            <h5>Images</h5>
+            <p>
+              Images are embedded in a page using an empty
+              <mark>&lt;img&gt;</mark> tag.
+            </p>
+
+            <p>
+              The <mark>src</mark> and <mark>alt</mark> attributes set the
+              location of the image file and alternative text to describe the
+              image.
+            </p>
+
+            <code>&lt;img src="/twitter.png" alt="Twitter icon"&gt;</code>
+
+            <p>
+              Relative paths can point to the current directory, a parent
+              folder, or multiple levels up.
+            </p>
+
+            <code>&lt;img src="images/example.jpg"&gt;</code>
+            <br />
+            <code>&lt;img src="../images/example.jpg"&gt;</code> <br />
+            <code>&lt;img src="../../images/example.jpg"&gt;</code>
+
+            <p>
+              Images can be styled by changing the
+              <mark
+                >height, width, border, padding, opacity, and
+                border-radius</mark
+              >.
+            </p>
+
+            <p>
+              The default size of an image element is determined by the size of
+              the image itself.
+            </p>
+
+            <p>
+              You can resize an image with the
+              <mark>CSS height and width</mark> properties
+            </p>
+
+            <code>
+              img {
+              <br />&nbsp;&nbsp;width: 200px; <br />&nbsp;&nbsp;height: 100px;
+              <br />}
+            </code>
+
+            <p>
+              You can make the image look transparent using the
+              <mark>opacity</mark> property.
+            </p>
+
+            <p>
+              Opacity is expressed as a number between 0 and 1 where 0 is 0%
+              opaque and 1 is 100% opaque.
+            </p>
+
+            <code>
+              img {
+              <br />&nbsp;&nbsp;opacity: 0.5; <br />}
+            </code>
+
+            <p>
+              Images can be wrapped inside <mark>anchor tags</mark> to create a
+              <mark>link</mark>.
+            </p>
+
+            <code
+              >&lt;a href="https://twitter.com"&gt; <br />&nbsp;&nbsp;&lt;img
+              src="/twitter.png" alt="Twitter icon"&gt; <br />&lt;/a&gt;
+            </code>
+
+            <p>
+              You can add <mark>padding</mark> to create empty space between the
+              image and the border.
+            </p>
+
+            <code>
+              img {
+              <br />&nbsp;&nbsp;border: 2px solid pink;
+              <br />&nbsp;&nbsp;padding: 25px; <br />}
+            </code>
+
+            <p>
+              You can round the corners of an image by setting a
+              <mark>border-radius</mark>.
+            </p>
+
+            <p>
+              A single value will set the border-radius for all four corners
+              while two or four values specify the radius for different corners.
+            </p>
+
+            <p>
+              The following example defines the border radius values for the
+              <mark>top left, top right, bottom right, bottom left</mark>:
+            </p>
+
+            <code>
+              img {
+              <br />&nbsp;&nbsp;border-radius: 20px 20px 0px 0px; <br />}
+            </code>
+
+            <p>
+              Create <mark>completely round edges</mark> by setting
+              border-radius equal to <mark>50%</mark> of the image size:
+            </p>
+
+            <code>
+              img {
+              <br />&nbsp;&nbsp;border-radius: 50%; <br />}
+            </code>
+          </article>
+          <article>
+            <h5>Borders</h5>
+            <p>
+              Borders can have a
+              <mark>border-width, border-style, and border-color</mark>.
+            </p>
+
+            <p>
+              Border-width determines the thickness of the border and can be
+              measured in:
+            </p>
+
+            <ul>
+              <li>absolute units like <mark>px, pt</mark></li>
+              <li>relative units like <mark>em, ext</mark></li>
+              <li><mark>thin, medium or thick</mark></li>
+            </ul>
+
+            <p>
+              Border-width values are arranged
+              <mark>top, right, bottom, left</mark> so remember the acronym
+              <mark>TR</mark>ou<mark>BL</mark>e!
+            </p>
+
+            <p>
+              A border-width with two values specifies top/bottom and
+              left/right.
+            </p>
+
+            <code>
+              p {
+              <br />&nbsp;&nbsp;border-width: 10px 20px; <br />}
+            </code>
+
+            <p>
+              A border-width with three values specifies top, left/right, and
+              bottom.
+            </p>
+
+            <code>
+              p {
+              <br />&nbsp;&nbsp;border-width: 10px 5px 20px; <br />}
+            </code>
+
+            <p>
+              A border-width with four values specifies top, right, bottom, and
+              left (TRBL).
+            </p>
+
+            <code>
+              p {
+              <br />&nbsp;&nbsp;border-width: 10px 5px 20px 5px; <br />}
+            </code>
+
+            <p>
+              The <mark>border-style</mark> determines the line pattern of the
+              border.
+            </p>
+
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 50%">Common Styles</th>
+                  <th>Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>solid</td>
+                  <td>______</td>
+                </tr>
+                <tr>
+                  <td>dashed</td>
+                  <td>_ _ _ _</td>
+                </tr>
+                <tr>
+                  <td>dotted</td>
+                  <td>. . . . . .</td>
+                </tr>
+                <tr>
+                  <td>double</td>
+                  <td>===== (unbroken irl)</td>
+                </tr>
+              </tbody>
+            </table>
+            <br />
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 50%">3D Styles</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>inset</td>
+                  <td>engraved</td>
+                </tr>
+                <tr>
+                  <td>outset</td>
+                  <td>embossed</td>
+                </tr>
+                <tr>
+                  <td>groove</td>
+                  <td>etched</td>
+                </tr>
+                <tr>
+                  <td>ridge</td>
+                  <td>raised</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p>
+              As with border-width, border-style values are arranged
+              <mark>TRBL</mark> and a combination of one, two, three, or four
+              values may be specified.
+            </p>
+
+            <code>
+              p {
+              <br />&nbsp;&nbsp;border-style: solid dashed dotted double;
+              <br />}
+            </code>
+
+            <p>
+              The colour of the border can be set with the
+              <mark>border-color</mark> property.
+            </p>
+
+            <p>
+              Border colours can be specified in the same way as other CSS
+              colours such as by <mark>name, hex, rgb or hsl</mark> value.
+            </p>
+
+            <p>
+              As with border-width and border-style, the border-color values are
+              arranged <mark>TRBL</mark> and a combination of one, two, three,
+              or four values may be specified.
+            </p>
+
+            <p>
+              The <mark>border</mark> property can be used as a
+              <mark
+                >shortcut to style border-width, border-style and
+                border-color</mark
+              >.
+            </p>
+
+            <code>
+              p {
+              <br />&nbsp;&nbsp;border: 5px dotted lemonchiffon; <br />}
+            </code>
+
+            <p>
+              Shortcuts can also style each side of the border independently:
+            </p>
+
+            <code>
+              p {
+              <br />&nbsp;&nbsp;border-top: 5px solid mistyrose;
+              <br />&nbsp;&nbsp;border-right: 2px dotted lemonchiffon;
+              <br />&nbsp;&nbsp;border-bottom: 5px solid mistyrose;
+              <br />&nbsp;&nbsp;border-left: 2px dotted lemonchiffon; <br />}
+            </code>
+          </article>
+          <article>
+            <h5>CSS Box Model</h5>
+            <p>
+              The <mark>CSS box model</mark> describes how an HTML element's
+              <mark>content, padding, border and margin</mark> fit together and
+              the space the element occupies on the page.
+            </p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model"
+              title="MDN CSS Box Model Intro"
+            >
+              <img
+                src="https://res.cloudinary.com/practicaldev/image/fetch/s--7ihEu6G5--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/iwkjpm93cri86dxj19gb.png"
+                alt="CSS Box Model"
+                style="width: 350px"
+              />
+            </a>
+
+            <p>
+              At the center of the box are the <mark>contents</mark> and you can
+              control the size of these contents using the CSS
+              <mark>height and width</mark> properties.
+            </p>
+
+            <p>
+              The CSS <mark>padding</mark> property sets a space between an
+              element's content and its border.
+            </p>
+
+            <p>The default padding value varies by element and browser.</p>
+
+            <p>
+              You can specify one value for consistent padding all around, two
+              values to set top/bottom and left/right, or four values for every
+              side (TRBL).
+            </p>
+
+            <code>
+              img {
+              <br />&nbsp;&nbsp;padding: 5px 10px 5px 10px; <br />}
+            </code>
+
+            <p>
+              The <mark>border</mark> wraps around the element's content and
+              padding.
+            </p>
+
+            <code>
+              img {
+              <br />&nbsp;&nbsp;border: 5px dotted lemonchiffon;
+              <br />&nbsp;&nbsp;padding: 5px 10px 5px 10px; <br />}
+            </code>
+
+            <p>
+              The <mark>margin</mark> wraps around the element's border and
+              determines spacing between this element and other elements.
+            </p>
+
+            <p>
+              Margin can be set on each side with
+              <mark
+                >margin-top, margin-right, margin-bottom, and margin-left</mark
+              >, or by using the shorthand <mark>margin</mark> followed by four
+              values (TRBL).
+            </p>
+
+            <code>
+              img {
+              <br />&nbsp;&nbsp;border: 5px dotted lemonchiffon;
+              <br />&nbsp;&nbsp;padding: 5px 10px 5px 10px;
+              <br />&nbsp;&nbsp;margin: 5px 10px 5px 10px; <br />}
+            </code>
+
+            <p>
+              So, the total space occupied by an element is its content
+              height/width, padding, borders, and margins. This is the box
+              model!
+            </p>
+          </article>
+        </section>
+
+        <div class="index-href" id="04"></div>
+        <section class="cheatsheets">
+          <h3>04</h3>
+          <h4>Divs, Spans, IDs & Classes</h4>
+          <article>
+            <h5>HTML Formatting Tags</h5>
+            <p>
+              While
+              <mark>most HTML elements are designed to add meaning</mark> rather
+              than add presentation, there are still some tags that are used
+              primarily for formatting.
+            </p>
+
+            <table>
+              <tr>
+                <td style="width: 30%"><code>&lt;sub&gt;</code></td>
+                <td>for subscript text <sub>like this</sub></td>
+              </tr>
+              <tr>
+                <td><code>&lt;sup&gt;</code></td>
+                <td>for superscript text <sup>like this</sup></td>
+              </tr>
+              <tr>
+                <td><code>&lt;del&gt;</code></td>
+                <td>for <del>deleted</del> text</td>
+              </tr>
+              <tr>
+                <td><code>&lt;ins&gt;</code></td>
+                <td>for <ins>inserted</ins> text</td>
+              </tr>
+            </table>
+
+            <p>
+              The <mark>strong</mark> and <mark>emphasis</mark> HTML elements
+              indicate <mark> meaning as well as formatting</mark>.
+            </p>
+
+            <table>
+              <tr>
+                <td style="width: 30%"><code>&lt;em&gt;</code></td>
+                <td>for <em>emphasis</em>, italic default</td>
+              </tr>
+              <tr>
+                <td><code>&lt;strong&gt;</code></td>
+                <td>for <strong>important text</strong>, bold default</td>
+              </tr>
+            </table>
+
+            <p>
+              The default styling for &lt;em&gt; and &lt;strong&gt; can be
+              adjusted without affecting the meaning of the elements.
+            </p>
+
+            <p>
+              Note: Modern web pages have moved away from using &lt;b&gt;,
+              &lt;i&gt;, and &lt;u&gt; tags.
+            </p>
+          </article>
+          <article>
+            <h5>Divs & Spans</h5>
+            <p>
+              Div and span are generic elements without semantic meanings but
+              are used to help style HTML.
+            </p>
+
+            <p>
+              The <code>&lt;div&gt;</code> is a generic division element used to
+              define <mark>containers or sections</mark> within our HTML.
+            </p>
+
+            <p>
+              Wrapping a group of elements within a <code>&lt;div&gt;</code> is
+              most useful when styling in CSS.
+            </p>
+
+            <p>
+              Div elements are <mark>block level</mark> elements, which means
+              that by default:
+            </p>
+
+            <ul>
+              <li>Div elements <mark>start on a new line</mark></li>
+              <li>Elements after a div start on the next line</li>
+              <li>
+                They take up the <mark>full width</mark> of their parent element
+              </li>
+            </ul>
+
+            <p>
+              The <code>&lt;span&gt;</code> element is used to style
+              <mark>individual sections</mark> within elements, making it easier
+              to add a little formatting.
+            </p>
+
+            <p>
+              Span elements are <mark>inline</mark> elements, which means that
+              by default:
+            </p>
+
+            <ul>
+              <li>
+                Span elements <mark>do <em>not</em> start on a new line</mark>
+              </li>
+              <li>Content after a span element continues on the same line</li>
+              <li>They are only <mark> as wide as their contents</mark>.</li>
+            </ul>
+          </article>
+          <article>
+            <h5>CSS Display Property</h5>
+            <p>
+              The CSS <mark>display</mark> property controls whether an element
+              appears as an <mark>inline or block</mark> level element or
+              whether an element is rendered on the page at all.
+            </p>
+
+            <p>Some possible values of the display property are:</p>
+
+            <ul>
+              <li>block</li>
+              <li>inline</li>
+              <li>inline-block</li>
+              <li>none</li>
+            </ul>
+
+            <p>A <mark>block</mark> level element:</p>
+
+            <ul>
+              <li>starts on a <mark>new line</mark></li>
+              <li>
+                takes up the <mark>full width</mark> of its parent element
+              </li>
+              <li>has <mark>elements after it start on the next line</mark></li>
+              <li>
+                allows <mark>width and height</mark> to be controlled using CSS
+                properties
+              </li>
+            </ul>
+
+            <code>
+              p {
+              <br />&nbsp;&nbsp;display:block; <br />&nbsp;&nbsp;height:25px;
+              <br />&nbsp;&nbsp;width:25px; <br />}
+            </code>
+
+            <p>
+              Example block level elements include &lt;h1&gt;, &lt;p&gt;, and
+              &lt;div&gt;.
+            </p>
+
+            <p>An <mark>inline</mark> element:</p>
+
+            <ul>
+              <li>does not have its own line</li>
+              <li>is the width of its contents</li>
+              <li>does not allow width and height to be adjusted</li>
+            </ul>
+
+            <code>
+              p {
+              <br />&nbsp;&nbsp;display:inline; <br />}
+            </code>
+
+            <p>
+              Example inline elements include &lt;a&gt;, &lt;em&gt;, and
+              &lt;span&gt;.
+            </p>
+
+            <p>An <mark>inline-block</mark> element:</p>
+
+            <ul>
+              <li>does not have its own line</li>
+              <li>is the width of its contents</li>
+              <li>
+                allows <mark>width and height</mark> to be controlled using CSS
+                properties
+              </li>
+            </ul>
+
+            <code>
+              p {
+              <br />&nbsp;&nbsp;display:inline-block;
+              <br />&nbsp;&nbsp;height:25px; <br />&nbsp;&nbsp;width:25px;
+              <br />}
+            </code>
+
+            <p>
+              The &lt;img&gt; element has a default display value of inline but
+              <mark>acts as if it has the styling inline-block</mark>.
+            </p>
+
+            <p>
+              An element with a display property of <mark>none</mark> is removed
+              from the layout and is not rendered.
+            </p>
+
+            <code>
+              p {
+              <br />&nbsp;&nbsp;display:none; <br />}
+            </code>
+          </article>
+          <article>
+            <h5>IDs & Classes</h5>
+            <p>
+              An <mark>ID</mark> identifies an element on a page. They are
+              <mark>unique</mark> and can only be <mark>placed once</mark> on a
+              page.
+            </p>
+
+            <p>
+              We style an element with a particular ID using the CSS selector
+              <mark>#</mark> followed by the ID name.
+            </p>
+
+            <code
+              >#introParagraph { <br />&nbsp;&nbsp;color: blue; <br />}
+            </code>
+
+            <p>
+              We can add an ID attribute to any HTML element to uniquely
+              identify it.
+            </p>
+
+            <code
+              >&lt;p id="mainStudy"&gt; Machine Learning is a subset of
+              AI.&lt;/p&gt;</code
+            >
+            <br />
+            <br />
+            <code>
+              #mainStudy {
+              <br />&nbsp;&nbsp;font-size: 15px; <br />}
+            </code>
+
+            <p>
+              A <mark>class</mark> attribute identifies
+              <mark>similar elements</mark> on a page. They can be added in
+              <mark>multiples</mark>.
+            </p>
+
+            <code>
+              &lt;ul&gt;
+              <br />&nbsp;&nbsp;&lt;li class="language"&gt; HTML&lt;/li&gt;
+              <br />&nbsp;&nbsp;&lt;li class="language"&gt; CSS&lt;/li&gt;
+              <br />
+              &lt;/ul&gt;
+            </code>
+
+            <p>
+              We style elements of the same class using the CSS selector
+              <mark>.</mark> followed by the class name.
+            </p>
+
+            <code>.language { <br />&nbsp;&nbsp;color: blue; <br />} </code>
+          </article>
+          <article>
+            <h5>Background Styling</h5>
+            <p>
+              It can be useful to change the <mark>background</mark> styling of
+              an element, especially block level or inline, to identify the
+              space it is taking up on the page.
+            </p>
+
+            <p>There are several CSS background properties we can control:</p>
+
+            <ul>
+              <li>background-color</li>
+              <li>background-image</li>
+              <li>background-repeat</li>
+              <li>background-position</li>
+            </ul>
+
+            <p>
+              The <mark>background-color</mark> property uses the same rules as
+              color and border-color properties.
+            </p>
+
+            <code>
+              div {
+              <br />&nbsp;&nbsp;background-color: hotpink; <br />}
+            </code>
+
+            <p>
+              The <mark>background-image</mark> property can be set on any
+              element using the <mark>url</mark> value followed by the image
+              location:
+            </p>
+
+            <code>
+              div {
+              <br />&nbsp;&nbsp;background-image: url('/hearts.jpg'); <br />}
+            </code>
+
+            <p>
+              The <mark>background-repeat</mark> property controls how a
+              background image will repeat to fill the element it's set on.
+            </p>
+
+            <code>
+              div {
+              <br />&nbsp;&nbsp;background-image: url('/hearts.jpg');
+              <br />&nbsp;&nbsp;background-repeat: repeat; <br />}
+            </code>
+
+            <br />
+            <br />
+            <table>
+              <thead>
+                <th>value</th>
+                <th>description</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>repeat</td>
+                  <td>default, repeats both directions</td>
+                </tr>
+                <tr>
+                  <td>repeat-x</td>
+                  <td>repeats horizontally</td>
+                </tr>
+                <tr>
+                  <td>repeat-y</td>
+                  <td>repeats vertically</td>
+                </tr>
+                <tr>
+                  <td>no-repeat</td>
+                  <td>does not repeat in any direction</td>
+                </tr>
+              </tbody>
+            </table>
+            <br />
+
+            <p>
+              The <mark>background-position</mark> property uses the values
+              <mark>left or right</mark> and <mark>top or bottom</mark> to place
+              the image <mark>relative to the element</mark>.
+            </p>
+
+            <code>
+              div {
+              <br />&nbsp;&nbsp;background-image: url('/hearts.jpg');
+              <br />&nbsp;&nbsp;background-repeat: no-repeat;
+              <br />&nbsp;&nbsp;background-position: left top; <br />}
+            </code>
+
+            <p>
+              To keep our CSS neater, we can use the
+              <mark>background</mark> property as a shorthand for the other
+              properties:
+            </p>
+
+            <ol>
+              <li>background-color</li>
+              <li>background-image</li>
+              <li>background-repeat</li>
+              <li>background-position</li>
+            </ol>
+
+            <p>
+              <code>
+                div {
+                <br />&nbsp;&nbsp;background: hotpink url('classroom.jpg')
+                no-repeat right bottom; <br />
+                }
+              </code>
+            </p>
+
+            <h5>Lara's Code Demo</h5>
+
+            <p><mark>IDs and Classes can be combined!</mark></p>
+
+            <code>
+              &lt;div id="mainContainer" class="container"&gt;
+              <br />&nbsp;&nbsp;&lt;div class="wrapper"&gt;
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Text begins
+              here..&lt;/p&gt;
+            </code>
+
+            <p>Comments are formatted differently in CSS compared to HTML.</p>
+
+            <code>
+              <mark>/*</mark> em { <br />&nbsp;&nbsp;display:block; <br />}
+              <mark>*/</mark>
+            </code>
+
+            <p>
+              By assigning <mark>auto</mark> to the left/right margins of an
+              element, they take up the available horizontal space in the
+              element's container equally and become <mark>centered</mark>.
+            </p>
+
+            <code>
+              .wrapper {
+              <br />&nbsp;&nbsp;margin: 0 auto; <br />}
+            </code>
+
+            <p>
+              You might create a &lt;h1&gt; element that identifies your
+              business name or similar that is useful for Google but does not
+              need to be displayed for the user.
+            </p>
+
+            <code>
+              &lt;h1 id="businessName"&gt;Code Like A Girl&lt;/h1&gt;
+            </code>
+            <br />
+            <br />
+            <code>
+              #businessName {
+              <br />&nbsp;&nbsp;display: none; <br />}
+            </code>
+          </article>
+        </section>
+
+        <div class="index-href" id="05"></div>
+        <section class="cheatsheets">
+          <h3>05</h3>
+          <h4>CSS Selectors & Positioning</h4>
+          <p>There are additional CSS selectors beyond IDs and classes.</p>
+          <p>
+            The position of elements on a page can be altered using the CSS
+            <mark>position</mark> property.
+          </p>
+          <article>
+            <h5>Descendent Selectors</h5>
+            <p>
+              The descendent selector pattern is used to style any element
+              that's within another element.
+            </p>
+
+            <p>
+              Descendent selectors are marked in CSS by having a space between
+              two selectors:
+            </p>
+
+            <p>
+              <mark class="mark-yellow">ancestor</mark> <mark>descendant</mark>
+              <code>{ <br />&nbsp;&nbsp;property: value; <br />}</code>
+            </p>
+
+            <p>
+              The following descendent selector styles only those
+              <code>&lt;p&gt;</code> elements that are descendents of
+              <code>&lt;div&gt;</code> elements.
+            </p>
+
+            <code
+              >div p { <br />&nbsp;&nbsp;background-color: yellow; <br />}
+            </code>
+          </article>
+          <article>
+            <h5>Child Selectors</h5>
+            <p>
+              The child selector pattern styles only elements that are
+              <mark>direct children</mark> of the first element specified.
+            </p>
+
+            <p>
+              In other words, child selectors affect styling only one level deep
+              in your markup.
+            </p>
+
+            <p>
+              Child selectors are marked in CSS by having a > between two
+              selectors:
+            </p>
+
+            <p>
+              <mark class="mark-yellow">parent</mark> > <mark>child</mark>
+              <code>{ <br />&nbsp;&nbsp;property: value; <br />}</code>
+            </p>
+
+            <p>
+              The following child selector styles only those
+              <code>&lt;p&gt;</code> elements that are direct children of
+              <code>&lt;div&gt;</code> elements.
+            </p>
+
+            <code
+              >div > p { <br />&nbsp;&nbsp;background-color: yellow; <br />}
+            </code>
+          </article>
+          <article>
+            <h5>Combining Selectors</h5>
+            <p>
+              We target elements with a particular class or ID using the CSS
+              selectors:
+            </p>
+
+            <code>.class { } <br />#id { } </code>
+
+            <p>
+              We can use the same child and descendant selector patterns with
+              CSS classes and IDs.
+            </p>
+
+            <code
+              >.wrapper .content { <br />&nbsp;&nbsp;background-color: yellow;
+              <br />}
+            </code>
+
+            <p>
+              The above <mark>descendent selector</mark> will give a yellow
+              background to every element with the content class inside an
+              element with the wrapper class.
+            </p>
+
+            <code
+              >#main > .content { <br />&nbsp;&nbsp;background-color: yellow;
+              <br />}
+            </code>
+
+            <p>
+              The above <mark>child selector</mark> will give a yellow
+              background to only first-level .column elements within the #main
+              element.
+            </p>
+
+            <p>
+              If there were .column elements that were nested deeper then they
+              would not be selected for styling.
+            </p>
+
+            <p>
+              Note: the selecting rules apply no matter how many levels deep or
+              how specific you want to be .. but it's best to avoid overly
+              specific selectors!
+            </p>
+          </article>
+          <article>
+            <h5>Static Positioning</h5>
+            <p>
+              Static positioning means not moving the element at all from its
+              <mark>usual position</mark> on the page.
+            </p>
+
+            <p>
+              If no position is specified in CSS, the default styling for all
+              elements is:
+            </p>
+
+            <code>position: static</code>
+          </article>
+          <article>
+            <h5>Relative Positioning</h5>
+            <p>
+              We use the <mark>top, left, bottom, and right</mark> properties to
+              control how far we displace an element.
+            </p>
+
+            <code>position: relative; <br />left: 5px; </code>
+
+            <p>
+              The above example moves the left edge of an element 5px from its
+              usual position in the <mark>positive direction</mark> (ie. to the
+              right).
+            </p>
+
+            <code>position: relative; <br />left: -5px; </code>
+
+            <p>
+              The above example moves the left edge of an element 5px from its
+              usual position in the <mark>negative direction</mark> (ie. to the
+              left).
+            </p>
+
+            <code>position: relative; <br />top: 5px; </code>
+
+            <p>
+              The above example moves the top edge of an element 5px from its
+              usual position in the <mark>positive direction</mark> (ie. down).
+            </p>
+
+            <code>position: relative; <br />top: -5px; </code>
+
+            <p>
+              The above example moves the top edge of an element 5px from its
+              usual position in the <mark>negative direction</mark> (ie. up).
+            </p>
+          </article>
+          <article>
+            <h5>Absolute Positioning</h5>
+            <p>
+              Absolute positioning takes the element out of its usual position
+              on the page.
+            </p>
+
+            <p>
+              If no other elements on the page have a position set, absolute
+              positioning places an element relative to the browser window.
+            </p>
+
+            <code>position: absolute; <br />top: 0px; <br />left: 0px; </code>
+
+            <p>
+              The above example positions an element in the top left corner of
+              the page.
+            </p>
+
+            <p>
+              The layout of any other elements on the page is as thought the
+              absolutely positioned element isn't there.
+            </p>
+
+            <p>
+              If you absolutely position an element and any of its ancestor
+              elements have a position set (other than static)..
+            </p>
+
+            <code>
+              div {
+              <br />&nbsp;&nbsp;position: relative; <br />}
+            </code>
+            <p>
+              <code>
+                #p { <br />&nbsp;&nbsp;position: absolute;
+                <br />&nbsp;&nbsp;top: 0px; <br />}
+              </code>
+            </p>
+
+            <p>
+              ..then the
+              <mark
+                >absolute positioning will place the element relative to its
+                closest ancestor with a position set</mark
+              >.
+            </p>
+          </article>
+          <article>
+            <h5>Fixed Positioning</h5>
+            <p>
+              The style <code>position: fixed</code> will position an element
+              relative to the browser window.
+            </p>
+
+            <code>
+              #sticky {
+              <br />&nbsp;&nbsp;position: fixed; <br />&nbsp;&nbsp;top: 100px;
+              <br />&nbsp;&nbsp;right: 100px; <br />}
+            </code>
+
+            <p>
+              It will keep that element fixed in position even as the browser
+              window scrolls.
+            </p>
+          </article>
+        </section>
+
+        <div class="index-href" id="06"></div>
+        <section class="cheatsheets">
+          <h3>06</h3>
+          <h4>Modern HTML & CSS</h4>
+          <article>
+            <h5>HTML5 Semantics</h5>
+            <p>
+              HTML5 is the latest version of HTML adding new capabalities such
+              as elements used for multimedia.
+            </p>
+
+            <p>
+              It also includes new <mark>semantic elements</mark> which better
+              describe the meaning of the content on the page.
+            </p>
+
+            <p>
+              It's important to be clear and descriptive, mostly for
+              <mark>structure and accessibility</mark>.
+            </p>
+
+            <p>
+              Using elements for their given purpose makes it easier for both
+              people and machines to read and understand your code.
+            </p>
+
+            <p>
+              HTML5 semantics allow us to identify specific content elements in
+              our markup such as:
+            </p>
+
+            <ul>
+              <li>header content</li>
+              <li>site navigation</li>
+              <li>standalone sections</li>
+              <li>self-contained articles</li>
+              <li>footer content</li>
+            </ul>
+
+            <p>
+              The <code>&lt;header&gt;</code> element can be used to represent
+              your site's <mark>main header</mark>.
+            </p>
+
+            <p>
+              It includes content that is used across all pages of your website,
+              such as a website logo.
+            </p>
+
+            <p>
+              The <code>&lt;footer&gt;</code> element is designed to enclose
+              your website's <mark>footer</mark> section.
+            </p>
+
+            <p>
+              In a footer, you would typically find website author content,
+              copyright information, social links, or even a sitemap.
+            </p>
+
+            <p>
+              The <code>&lt;nav&gt;</code> element can wrap a site's
+              <mark>navigational links</mark>.
+            </p>
+
+            <p>
+              It usually sits at the top, left, or right of the main content and
+              might be wrapped in the <code>&lt;header&gt;</code> element.
+            </p>
+
+            <p>
+              The <code>&lt;section&gt;</code> element represents a
+              <mark>standalone section of content</mark> on your website.
+            </p>
+
+            <p>
+              It is usually used to contain and organize repetitive groups of
+              content together.
+            </p>
+
+            <p>
+              A section element should include a <mark>h1-h6 title</mark> to
+              identify the content within it.
+            </p>
+
+            <p>
+              The <code>&lt;article&gt;</code> element identifies
+              <mark>self-contained and independent content</mark>.
+            </p>
+
+            <p>
+              Typically, article elements are used to contain blog posts, news
+              articles, and stories.
+            </p>
+          </article>
+          <article>
+            <h5>CSS Flexbox</h5>
+            <p>
+              <mark>CSS Flexbox</mark> is a set of CSS rules that provides a
+              more efficient way to layout, align, and distribute space and
+              items in a container.
+            </p>
+
+            <p>
+              By default, block elements are placed vertically down the page.
+            </p>
+
+            <p>
+              When we use Flexbox, we can design more complex web page designs
+              by challenging the default block and inline layouts.
+            </p>
+
+            <p>
+              To start a Flexbox layout, all you need is a
+              <mark>container (parent)</mark> with <mark>children</mark> in it.
+            </p>
+
+            <p>
+              Changing the <mark>display</mark> property on that container
+              enables flexible content for all its direct children.
+            </p>
+
+            <p>
+              Flexbox works in two axes: <mark>horizontal (justify)</mark> and
+              <mark>vertical (align)</mark>.
+            </p>
+
+            <p>
+              The <mark>flex-direction</mark> sets how the flex-items should
+              flow.
+            </p>
+
+            <p>
+              By default, the direction is horizontal and would be referred to
+              as the <mark>main axis</mark>.
+            </p>
+
+            <p>
+              The <mark>cross axis</mark> is perpendicular, vertical by default.
+            </p>
+          </article>
+          <article>
+            <h5>Display-Flex</h5>
+            <p>
+              To introduce a flexbox layout, you change the
+              <mark>display</mark> property on the parent element which is
+              wrapping your layout.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex; <br />}
+            </code>
+
+            <p>
+              The above property and value enables a flex context for all the
+              parent's direct children.
+            </p>
+          </article>
+          <article>
+            <h5>Flex-Direction</h5>
+            <p>
+              <mark>Flex-direction</mark> sets the main axis to horizontal or
+              vertical to control the flow of flex-items.
+            </p>
+
+            <p>The default flex-direction value is <mark>row</mark>.</p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex; <br />&nbsp;&nbsp;flex-direction:
+              row; <br />}
+            </code>
+
+            <p>
+              The above style will place your flex items
+              <mark>horizontally</mark> in a row from left to right.
+            </p>
+
+            <p>
+              The flex-direction <mark>row-reverse</mark> keeps the flex items
+              horizonatlly in a row but reverses the order.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex; <br />&nbsp;&nbsp;flex-direction:
+              row-reverse; <br />}
+            </code>
+
+            <p>
+              Flex-items can also be placed in a <mark>column</mark> from top to
+              bottom.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex; <br />&nbsp;&nbsp;flex-direction:
+              column; <br />}
+            </code>
+
+            <p>
+              The above style will place your flex items
+              <mark>vertically</mark> in a column from top to bottom.
+            </p>
+
+            <p>
+              Lastly, the flex-direction <mark>column-reverse</mark> places
+              items in a column but reverses the order from bottom to top.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex; <br />&nbsp;&nbsp;flex-direction:
+              column-reverse; <br />}
+            </code>
+          </article>
+          <article>
+            <h5>Flex-Wrap</h5>
+            <p>
+              Flexbox will squeeze everything onto one line unless you alter the
+              <mark>flex-wrap</mark> property.
+            </p>
+
+            <p>The default flex-wrap value is <mark>no wrap</mark>.</p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex; <br />&nbsp;&nbsp;flex-wrap:
+              nowrap; <br />}
+            </code>
+
+            <p>
+              The above style will mould all the flex-items into one row in your
+              container.
+            </p>
+
+            <p>
+              When your content is looking too squashed, you can adjust teh
+              flex-wrap value to <mark>wrap</mark>.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex; <br />&nbsp;&nbsp;flex-wrap:
+              wrap; <br />}
+            </code>
+
+            <p>
+              The content items will revert to their original widths and wrap
+              onto multiple lines.
+            </p>
+
+            <p>
+              Lastly, the flex-wrap value <mark>wrap-reverse</mark> will wrap
+              onto multiple lins from bottom to top.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex; <br />&nbsp;&nbsp;flex-wrap:
+              wrap-reverse; <br />}
+            </code>
+          </article>
+          <article>
+            <h5>Justify-Content</h5>
+            <p>
+              The <mark>justify-content</mark> property will distribute extra
+              space that's available along your main axis.
+            </p>
+
+            <p>
+              The default value is <mark>flex-start</mark> which arranges
+              flex-items at the start of the container.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex;
+              <br />&nbsp;&nbsp;justify-content: flex-start; <br />}
+            </code>
+
+            <p>
+              <mark>Flex-end</mark> will shift the space in your container and
+              pack the flex-items at the end.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex;
+              <br />&nbsp;&nbsp;justify-content: flex-end; <br />}
+            </code>
+
+            <p>
+              To center items along your main axis, use the value
+              <mark>center</mark>.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex;
+              <br />&nbsp;&nbsp;justify-content: center; <br />}
+            </code>
+
+            <p>
+              To have items evenly spaced from the start of your flex container
+              to the end, use the value <mark>space-between</mark>.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex;
+              <br />&nbsp;&nbsp;justify-content: space-between; <br />}
+            </code>
+
+            <p>
+              To have items evenly dispersed with
+              <em>equal space around each item</em>, us the value
+              <mark>space-around</mark>.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex;
+              <br />&nbsp;&nbsp;justify-content: space-around; <br />}
+            </code>
+
+            <p>
+              Lastly, use <mark>space-evenly</mark> to have all available space
+              evenly dispersed.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex;
+              <br />&nbsp;&nbsp;justify-content: space-evenly; <br />}
+            </code>
+          </article>
+          <article>
+            <h5>Align-Items</h5>
+            <p>
+              The <mark>align-items</mark> property will define how the flex
+              items are laid out <em>perpendicular</em> to the main axis set.
+            </p>
+
+            <p>
+              With the align-items property remaining on the default value of
+              <mark>stretch</mark>, the items fill the container perpendicular
+              to the flex-direction.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex; <br />&nbsp;&nbsp;align-items:
+              stretch; <br />}
+            </code>
+
+            <p>
+              The value <mark>flex-start</mark> will take away the default
+              stretching behavior and place the items at the start of the cross
+              axis.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex; <br />&nbsp;&nbsp;align-items:
+              flex-start; <br />}
+            </code>
+
+            <p>
+              To place the items at the end of the cross axis, you would change
+              the align-items property to <mark>flex-end</mark>.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex; <br />&nbsp;&nbsp;align-items:
+              flex-end; <br />}
+            </code>
+
+            <p>
+              Lastly, items can be aligned in the center of the cross axis with
+              the <mark>center</mark> value.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex; <br />&nbsp;&nbsp;align-items:
+              center; <br />}
+            </code>
+          </article>
+          <article>
+            <h5>Align-Content</h5>
+            <p>
+              The <mark>align-content</mark> property manipulates the
+              distribution of space between and around elements that run over
+              multiple lines.
+            </p>
+
+            <p>
+              By default, align-content will <mark>stretch</mark> the content in
+              your container to fill all the remaining space.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex; <br />&nbsp;&nbsp;flex-wrap:
+              wrap; <br />&nbsp;&nbsp;align-contents: stretch; <br />}
+            </code>
+
+            <p>
+              To set the content at the start of the container, set
+              align-content to <mark>flex-start</mark>.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex; <br />&nbsp;&nbsp;flex-wrap:
+              wrap; <br />&nbsp;&nbsp;align-contents: flex-start; <br />}
+            </code>
+
+            <p>
+              Note: as with all flex properties, align-content will honour the
+              <mark>flex-direction</mark> set on the container, too.
+            </p>
+
+            <p>
+              To set the content at the end of the container, use the value
+              <mark>flex-end</mark>.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex; <br />&nbsp;&nbsp;flex-wrap:
+              wrap; <br />&nbsp;&nbsp;align-contents: flex-end; <br />}
+            </code>
+
+            <p>
+              To have the multi=line content centered, set the value to
+              <mark>center</mark>.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex; <br />&nbsp;&nbsp;flex-wrap:
+              wrap; <br />&nbsp;&nbsp;align-contents: center; <br />}
+            </code>
+
+            <p>
+              The <mark>space-between</mark> value will evenly distribute the
+              space between each line while keeping the first line at the start
+              and the last at the end.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex; <br />&nbsp;&nbsp;flex-wrap:
+              wrap; <br />&nbsp;&nbsp;align-contents: space-between; <br />}
+            </code>
+
+            <p>
+              To have equal space on both sides of each line, use the
+              <mark>space-around</mark> value.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex; <br />&nbsp;&nbsp;flex-wrap:
+              wrap; <br />&nbsp;&nbsp;align-contents: space-around; <br />}
+            </code>
+
+            <p>
+              Or, to have your lines evenly distributed in the remaining space,
+              use the <mark>space-evenly</mark> value.
+            </p>
+
+            <code>
+              .container {
+              <br />&nbsp;&nbsp;display: flex; <br />&nbsp;&nbsp;flex-wrap:
+              wrap; <br />&nbsp;&nbsp;align-contents: space-evenly; <br />}
+            </code>
+          </article>
+        </section>
+
+        <div class="index-href" id="07"></div>
+        <section class="cheatsheets">
+          <h3>07</h3>
+          <h4>Resolving CSS Conflicts</h4>
+          <p>
+            The CSS cascade and understanding how browsers resolve competing CSS
+            rules.
+          </p>
+          <article>
+            <h5>Inheritance</h5>
+            <p>
+              In CSS, if we don't set the value of a property on an element, one
+              of two things will happen depending on which property:
+            </p>
+
+            <ol>
+              <li>
+                The element will inherit the styling of that property from its
+                <mark>parent element</mark>;
+              </li>
+              <li>
+                The element will inherit the stylinging of the
+                <mark>initial value</mark> of that property.
+              </li>
+            </ol>
+
+            <p>
+              Many elements defined in your markup will <mark>inherit</mark> the
+              styling of their parent elements.
+            </p>
+
+            <p>
+              However, there are some properties which have a
+              <mark>default "do not inherit"</mark> behaviour.
+            </p>
+
+            <p>
+              These are typically properites that are going to dramatically
+              change the way your element looks, eg.
+              <mark>border, margin, padding, and width</mark>.
+            </p>
+
+            <p>
+              If we wanted these non-inherited properties to apply to the child
+              elements, we would need to specifically seet them, too.
+            </p>
+          </article>
+          <article>
+            <h5>Positioning</h5>
+            <p>
+              As our stylesheets get larger, we might find ourselves writing CSS
+              declarations that are not being displayed on our page .. and not
+              understand why.
+            </p>
+
+            <p>
+              One of the most important rules for how our browsers resolve
+              competing CSS style rules is the <mark>position</mark> in which
+              these rules appear in our stylesheet.
+            </p>
+
+            <p>
+              The position of rules in your CSS matters when you have
+              <mark>competing style rules</mark>.
+            </p>
+
+            <p>
+              For example, if you have declared a background-image on an element
+              twice, or if you have set up two rulesets for a &lt;div&gt;
+              element in your CSS..
+            </p>
+
+            <p>
+              .. then the <mark>order</mark> in which you declare these CSS
+              rules matters.
+            </p>
+
+            <p>
+              <mark
+                >Rules that are defined later in your stylesheet will override
+                those that appear earlier</mark
+              >.
+            </p>
+
+            <p>
+              This same <mark>"latest-declared"</mark> rule also applies if
+              properties are applied twice within the same ruleset.
+            </p>
+
+            <p>
+              The last property and value specified will take precedence over
+              those declared earlier in your stylesheet.
+            </p>
+          </article>
+          <article>
+            <h5>Specificity</h5>
+            <p>
+              We know that we can set IDs and classes on our HTML elements and
+              then use those as selectors in our CSS.
+            </p>
+
+            <p>
+              There is a <mark>precedence</mark> set for which selectors are
+              considered <mark>more specific than others</mark>.
+            </p>
+
+            <p><mark>IDs are the most specific</mark>.</p>
+
+            <p>
+              Selectors which target IDs will override those that are using
+              classes or direct elements.
+            </p>
+
+            <p>
+              <mark
+                >Classes are less specific than IDs but more specific than HTML
+                elements</mark
+              >.
+            </p>
+
+            <p>
+              Classes are one of the most popular selectors to use because they
+              can target particular elements and be applied to multiple elements
+              at once.
+            </p>
+
+            <p>
+              A particular class can be set again and again on different
+              elements throughout our HTML, allowing us to apply the same styles
+              on similar elements.
+            </p>
+
+            <p>
+              A single element can also have multiple classes applied to it.
+            </p>
+
+            <code>&lt;h1 class="title right"&gt;</code>
+
+            <p>
+              To be more specific in our CSS declaration, we can target multiple
+              classes.
+            </p>
+
+            <code>.title.right { <br />&nbsp;&nbsp;color: navy; <br />} </code>
+
+            <p>
+              In terms of what takes precedence in our stylesheets,
+              multiple-class selectors rank higher than single-class selectors
+              as they are more specific.
+            </p>
+
+            <p>
+              The least specific way to target CSS is by simply using the HTML
+              element itself as a selector.
+            </p>
+
+            <p>
+              A CSS rule which targets the element using a class is more
+              specific than a rule which targets the HTML element.
+            </p>
+
+            <p>
+              So, a rule with a class affecting an HTML element will override a
+              rule without.
+            </p>
+          </article>
+          <article>
+            <h5>Importance</h5>
+            <p>
+              There is a special-case rule called <code>!important</code> which
+              overrides any rule, no matter how specific.
+            </p>
+
+            <code
+              >.panel { <br />&nbsp;&nbsp;color: red !important; <br />}
+            </code>
+
+            <p>
+              However, the !important rule should be treated with extreme
+              caution.
+            </p>
+
+            <p>
+              If you set !important on rules because the position, specificity,
+              and inheritance aren't being used correctly, your stylesheets will
+              soon become difficult to read and maintain.
+            </p>
+
+            <p>
+              Reserve the use of !important for an emergency scenario where you
+              have no other option.
+            </p>
+          </article>
+        </section>
+
+        <div class="index-href" id="08"></div>
+        <section class="cheatsheets">
+          <h3>08</h3>
+          <h4>Responsive Web Design</h4>
+          <p>
+            A responsive webpage can change according to the user's screen size,
+            device, browser, and/or orientation.
+          </p>
+
+          <p>
+            A responsive design often uses <mark>relative units</mark> like
+            percentages or ems for things like element width.
+          </p>
+
+          <article>
+            <h5>Viewport</h5>
+            <p>The viewport is the size of the user's browser window.</p>
+
+            <p>
+              A user's viewport can vary depending on the device or browser
+              they're using.
+            </p>
+
+            <p>
+              We can control how a webpage should render within a user's
+              viewport using the <code>&lt;meta&gt;</code> tag.
+            </p>
+
+            <p>
+              The <mark>meta tag</mark> sits within the head of our HTML page.
+            </p>
+
+            <code
+              >&lt;meta name="viewport" content="width=device-width",
+              initial-scale=1" /&gt;</code
+            >
+
+            <p>
+              The <mark>content attribute</mark> allows us to control the width
+              and zoom level of the viewport.
+            </p>
+          </article>
+          <article>
+            <h5>Media Queries</h5>
+            <p>
+              A media query is a CSS feature that allows us to apply CSS styles
+              only when a user browses a website with certai browser
+              <mark>viewport sizes, devices, media, or device orientations</mark
+              >.
+            </p>
+
+            <p>
+              Media queries can include media types (optional), media feature
+              expressions, and logical operators.
+            </p>
+
+            <p>We write a media query as follows:</p>
+
+            <code
+              >@media only screen and (max-width: 480px) { <br />&nbsp;&nbsp;h1
+              { <br />&nbsp;&nbsp;&nbsp;&nbsp;font-size: 16px;
+              <br />&nbsp;&nbsp;} <br />}
+            </code>
+
+            <p>
+              The <mark>and operator</mark> allows us to combine more than one
+              media type or feature in a media query.
+            </p>
+
+            <p>
+              The <mark>media feature expression</mark> tells the browser when
+              to apply these styles.
+            </p>
+
+            <p>
+              There are several <mark>media types</mark> available including
+              screen, print, speech, and all.
+            </p>
+
+            <p>
+              We can combine conditions in our media queries with
+              <mark>operators</mark> such as and, only, and not only.
+            </p>
+
+            <p>
+              We can also style for different deivce orienations: portrait or
+              landscape.
+            </p>
+
+            <p>
+              For example, we could
+              <mark>
+                change the direction of a flexbox layout for potrait and
+                landscape
+              </mark>
+              orientations.
+            </p>
+
+            <code>
+              @media (orientation: portrat) {
+              <br />.container { <br />&nbsp;&nbsp;flex-direction: column;
+              <br />&nbsp;} <br />} <br />@media (orientation: landscape) {
+              <br />.container { <br />&nbsp;&nbsp;flex-direction: row;
+              <br />&nbsp;} <br />}
+            </code>
+
+            <p>
+              The points where we change our styling with media queries are
+              called <mark>breakpoints</mark>.
+            </p>
+
+            <p>
+              It is most common to pick breakpoints to target devices of certain
+              widths to address specific styling issues.
+            </p>
+          </article>
+          <article>
+            <h5>Mobile-first Design</h5>
+            <p>
+              In mobile-first design, we create our styling with users on mobile
+              devices first.
+            </p>
+
+            <p>
+              We then add adjustments to our styling such as media queries to
+              target users on other devices like desktop computers or tablets.
+            </p>
+
+            <p>
+              Instead of leaving out information to fit smaller devices,
+              developers adapt the content to fit any device.
+            </p>
+
+            <p>
+              It's more about progressively enhancing the content as a user's
+              viewport increases.
+            </p>
+
+            <p>Mobile-first design considers things such as:</p>
+
+            <ul>
+              <li>Simplicity</li>
+              <li>Navigation that is easily used on a small screen</li>
+              <li>Links large enough to be used by fingertips</li>
+              <li>Optimising for slower internet connections</li>
+            </ul>
+
+            <p>
+              When developing with a mobile-first approach, we should set up our
+              CSS rules for mobile as a foundation and then beuild on that using
+              things like media queries.
+            </p>
+          </article>
+        </section>
+
+        <div class="index-href" id="09"></div>
+        <section class="cheatsheets">
+          <h3>09</h3>
+          <h4>HTML Forms</h4>
+          <p>
+            An HTML form is a set of inputs that allow a user to enter data into
+            a form on the webpage.
+          </p>
+
+          <p>
+            Once the user submits the form, their responses are sent to a server
+            or another page.
+          </p>
+
+          <p>
+            We can insert a form into our webpage using the
+            <code>&lt;form&gt;</code> element.
+          </p>
+
+          <p>
+            There are many different kinds of <mark>form fields</mark> depending
+            on the desired user interaction and data.
+          </p>
+          <article>
+            <h5>The Input Element</h5>
+            <p>
+              The <mark>input element</mark> is the most common form field with
+              a considerable list of capabilities.
+            </p>
+
+            <p>
+              By altering the <mark>type</mark> attribute, the input field
+              becomes quite powerful.
+            </p>
+
+            <code
+              >&lt;form&gt; <br />&nbsp;&nbsp;&lt;input type="text"
+              name="name"&gt; <br />&lt;/form&gt;
+            </code>
+
+            <p>
+              A <mark>single-line text field</mark> is the default HTML input
+              element.
+            </p>
+
+            <p>
+              Changing the <mark>type attribute</mark> will alter the input
+              appearance and behaviour.
+            </p>
+            <code
+              >&lt;form&gt; <br />&nbsp;&nbsp;&lt;input type="text" name="name"
+              <mark>placeholder</mark>="Full Name"&gt;
+              <br />&nbsp;&nbsp;&lt;input type="email" name="email"
+              <mark>required</mark>&gt; <br />&nbsp;&nbsp;&lt;input
+              type="submit" <mark>value</mark>="Submit"&gt; <br />&lt;/form&gt;
+            </code>
+
+            <p>
+              The list of available attributes for the input element is long and
+              diverse.
+            </p>
+
+            <p>
+              Depending on which attributes are set, it will affect the
+              interaction your user has with the input.
+            </p>
+          </article>
+          <article>
+            <h5>Labels</h5>
+            <p>
+              The &lt;label&gt; element is useful for associating an input with
+              a caption or direction for how to complete the field.
+            </p>
+
+            <code>
+              &lt;label&gt;
+              <br />&nbsp;&nbsp;What's your name? <br />&nbsp;&nbsp;&lt;input
+              name="full-name"&gt; <br />&lt;/label&gt;
+            </code>
+
+            <p>
+              Or, the label can be defined separately and then associated with
+              the input via a shared attribute.
+            </p>
+
+            <code>
+              &lt;form&gt;
+              <br />&nbsp;&nbsp;&lt;label <mark>for="inspo-person"</mark>&gt;
+              <br />&nbsp;&nbsp;Who inspires you?
+              <br />&nbsp;&nbsp;&lt;/label&gt; <br />&nbsp;&nbsp;&lt;input
+              type="text" <mark>id="inspo-person"</mark>&gt; <br />&lt;/form&gt;
+            </code>
+
+            <p>
+              Adding a label to your input also gives the user the ability to
+              click on the label to <mark>auto-focus</mark> on the associated
+              input.
+            </p>
+
+            <p>
+              Both nested and separate formats will associate the two elements
+              leading to better UX and accessibility.
+            </p>
+          </article>
+          <article>
+            <h5>Textareas</h5>
+            <p>
+              The &lt;textarea&gt; element can be used for multi-line text
+              responses.
+            </p>
+
+            <code
+              >&lt;textarea name="message"&gt; <br />&nbsp;&nbsp;Message..
+              <br />&lt;/textarea&gt;
+            </code>
+
+            <p>
+              Text areas have similar features to text inputs though the markup
+              is slightly different.
+            </p>
+
+            <p>Textareas do not support the value attribute.</p>
+
+            <p>
+              Instead, the
+              <mark
+                >default value is wrapped in opening and closing textarea
+                tags</mark
+              >.
+            </p>
+          </article>
+          <article>
+            <h5>Multiple-choice Fields</h5>
+            <p>
+              There are a few form fields we can use if we want to give the user
+              a choice between predefined options.
+            </p>
+
+            <p>Let's look at:</p>
+
+            <ul>
+              <li>dropdowns</li>
+              <li>checkboxes</li>
+              <li>radio buttons</li>
+            </ul>
+
+            <p>
+              <mark>Dropdowns</mark> are created using the &lt;select&gt;
+              element.
+            </p>
+
+            <code
+              >&lt;select name=select-time"&gt; <br />&nbsp;&nbsp;&lt;option
+              value="am"&gt;AM&lt;/option&gt; <br />&nbsp;&nbsp;&lt;option
+              value="pm"&gt;PM&lt;/option&gt; <br />&lt;/select&gt;
+            </code>
+
+            <p>
+              A select element has opening and closing tags with a list of
+              options nested in between.
+            </p>
+
+            <p>
+              Each option should have a value attribute to set the value of the
+              user's selection to send to the server when the form is submitted.
+            </p>
+
+            <p>
+              <mark>Checkboxes and radio buttons</mark> also allow a user to
+              select from a predefined list of options.
+            </p>
+
+            <p>
+              We use the <mark>&lt;input&gt;</mark> element for both but with
+              different type attributes set.
+            </p>
+
+            <p>
+              To create a checkbox we use an input element and set the type
+              attribute to checkbox.
+            </p>
+
+            <code
+              >&lt;input type="checkbox" <br />&nbsp;name="gang" id="gang"
+              value="Join"&gt; <br />&nbsp;&lt;label for="gang"&gt;Join the girl
+              gang?&lt;/label&gt;
+            </code>
+
+            <p>
+              For a radio button, we use the input element and set the type
+              attribute to radio.
+            </p>
+
+            <code
+              >&lt;input type="radio" <br />&nbsp;name="when" id="week"
+              value="weekly"&gt; <br />&nbsp;&lt;label
+              for="week"&gt;Weekly&lt;/label&gt;
+            </code>
+
+            <p>
+              The important distinction between these two input types is that
+              <mark>multiple checkboxes can be selected</mark> at once.
+            </p>
+
+            <p>However, radio buttons should be grouped into a set.</p>
+
+            <p>
+              To do this we declare the <mark>same name</mark> for each input in
+              the set.
+            </p>
+
+            <p>
+              Users can only select one of the radio buttons in a set at a time.
+            </p>
+
+            <p>
+              For good accessibilty, checkbox and radio button input types
+              should have associated labels declared alongside them.
+            </p>
+          </article>
+          <article>
+            <h5>Form Submission</h5>
+            <p>
+              At the end of a form, we can display a <mark>button</mark> for a
+              user to click on once they've finished filling out the form.
+            </p>
+
+            <p>
+              Clicking the button submits the user's responses to a server or
+              endpoint for processing.
+            </p>
+
+            <p>
+              To display a submit button we can use an input element with a type
+              attribute of submit.
+            </p>
+
+            <code>&lt;input type="submit" value="Send"&gt;</code>
+
+            <p>
+              The submit input type is displayed as a button that a user can
+              click.
+            </p>
+
+            <p>The text displayed is defined via the value attribute.</p>
+
+            <p>
+              There are several attributes on the form element which control the
+              way a form is submitted.
+            </p>
+
+            <p>
+              The two most important attributes are the
+              <mark>action and method</mark> attributes.
+            </p>
+
+            <p>
+              The action takes care of <mark>where</mark> form data is sent
+              while the method defines <mark>how</mark>.
+            </p>
+
+            <code>
+              &lt;form method="get" action="send.php"&gt;
+              <br />... <br />&lt;/form&gt;
+            </code>
+
+            <p>
+              The action attribute usually points to a webpage or URL that has
+              been designed to process the form data we're sending.
+            </p>
+
+            <p>
+              The method attribute controls what type of request is used to send
+              the data.
+            </p>
+
+            <p>
+              The value of the method can be either <mark>get or post</mark>.
+            </p>
+
+            <p>
+              This is because get and post are the two types of HTTP web
+              requests we can send.
+            </p>
+
+            <p>
+              <mark>HTTP (Hypertext Transfer Protocol)</mark> is a
+              communications protocol between the
+              <mark>client (user device)</mark> and
+              <mark
+                >server (the machine/s where backend software is hosted)</mark
+              >.
+            </p>
+
+            <p>To send data via HTTP we send a <mark>request</mark>.</p>
+
+            <p>
+              When we submit an HTML form, we tell our webpage to send the data
+              as an HTTP request.
+            </p>
+
+            <p>
+              There are two types of request we can use to send our form data:
+            </p>
+
+            <code>&lt;form method="GET"&gt;</code>
+
+            <p>
+              A <mark>get request</mark> is usually used to retrieve data from
+              the server and is smaller than a post request.
+            </p>
+
+            <code>&lt;form method="POST"&gt;</code>
+
+            <p>
+              A <mark>post request</mark> is used to post data to a server and
+              usually involves sending a lot of data.
+            </p>
+          </article>
+        </section>
+
+        <!-- <div class="index-href" id="10"></div>
+        <section class="cheatsheets">
+          <h3>10</h3>
+          <h4>Javascript</h4>
+          <p style="font-style: italic">Cheatsheet will be published by end of September, 2022.</p>
+        </section> -->
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-clg | container-fluid">
+        <div>
+          <a href="https://learnto.codelikeagirl.com/" target="_blank">
+            <img
+              id="logo-code-like-a-girl"
+              src="/images/logo-code-like-a-girl.png"
+              alt="Code Like a Girl logo"
+            />
+          </a>
+        </div>
+        <div class="container-contact-clg">
+          <button onclick="document.location='form.html'">Got Questions?</button>
+          <nav class="row">
+            <a href="https://twitter.com/codelikeagirlau" target="_blank">
+              <img src="/images/logo-twitter-clg.png" alt="twitter icon" />
+            </a>
+            <a href="https://www.facebook.com/codelikeagirlau" target="_blank">
+              <img src="/images/logo-facebook-clg.png" alt="facebook icon" />
+            </a>
+            <a
+              href="https://www.instagram.com/codelikeagirlau/"
+              target="_blank"
+            >
+              <img src="/images/logo-instagram-clg.png" alt="instagram icon" />
+            </a>
+            <a
+              href="https://au.linkedin.com/company/code-like-a-girl"
+              target="_blank"
+            >
+              <img src="/images/logo-linkedin-clg.png" alt="linkedin icon" />
+            </a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-cta">
+        <nav>
+          <ul role="list">
+            <li>
+              <a
+                href="https://learnto.codelikeagirl.com/terms-and-conditions/"
+                target="_blank"
+                >Terms & Conditions</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://learnto.codelikeagirl.com/privacy-policy/"
+                target="_blank"
+                >Privacy</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      
+    </script>
+  </body>
+</html>
